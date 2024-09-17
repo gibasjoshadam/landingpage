@@ -10,17 +10,32 @@ div{
     padding:0px;
 }
 
-.header, .footer{
+.header, .footer, .intro, #top{
     background-color: #1F2937;
 }
 
-.header{
+#top{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.header, .intro{
+    max-width: 1200px;
     font-size:24px;
     color: #f9faf8;
     font-weight:900;
     padding:16px;
     display:flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:24px;
+}
+
+.intro{
+    justify-content: space-evenly;
 }
 
 .footer{
@@ -45,21 +60,12 @@ div{
     gap:16px;
 }
 
-.intro{
-    padding:48px;
-    background-color: #1F2937;
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap:24px;
-}
-
 .left, .right{
     display:flex;
     flex-direction: column;
     width:500px;
     height:250px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .right{
